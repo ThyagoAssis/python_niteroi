@@ -9,8 +9,8 @@ Abrir o arquivo views.py do app que foi criado
 Em nosso exemplo foi o lista
 
 Adicionar o seguinte comando dentro deste arquivo:
-1 - Faça o import da biblioteca HttpResponse
-2 - Crie uma função chamada home que receba o paramentro request
+1. Faça o import da biblioteca HttpResponse
+2. Crie uma função chamada home que receba o paramentro request
 
 ```bash
 
@@ -24,8 +24,8 @@ def home(request):
 Configurar nosso APP
 
 Agora abra o arquivo settings.py dentro da pasta setup
-1 - Procuara pela opção: INSTALLED_APPS
-2 - Adcionar nosso app como na imagem abaixo:
+1. Procuara pela opção: INSTALLED_APPS
+2. Adcionar nosso app como na imagem abaixo:
 
 
 ```Bash
@@ -42,10 +42,10 @@ INSTALLED_APPS = [
 ```
 ### Passo 03: 
 Indicar a rota de acesso, ou seja, informar qual caminho será acessado no navegador para abrir nossa página 
-1 - Abra o arquivo urls.py no setup
-2 - Fazer o import da nossa função criada no arquivo views: from fotografia.views import home
-3 - Identificar a linha: urlpatterns
-4 - Adicionar a nossa rota:  path('', home)
+1. Abra o arquivo urls.py no setup
+2. Fazer o import da nossa função criada no arquivo views: from fotografia.views import home
+3. Identificar a linha: urlpatterns
+4. Adicionar a nossa rota:  path('', home)
 
 Ficará assim
 ```bash
@@ -67,18 +67,18 @@ Se tudo deu certo você verá seu ola mundo!
 Um Template no Django é um arquivo que define a estrutura e o layout de uma página web usando HTML e tags específicas do Django para exibir dados dinâmicos.
 ## Passo 01:
 
-1 - Criar uma pasta chamada templates dentro da pasta lista
+1. Criar uma pasta chamada templates dentro da pasta lista
 ### Obs: esta pasta deverá se chamar templates no plural e com letras minusculas
-2 - Criar dentro de templates criar uma pasta chamada lista
-3 - Criar dentro da pasta lista o arquivo home.html
-4 - Escreva dentro do arquivo home.html a seguinte tag:
+2. Criar dentro de templates criar uma pasta chamada lista
+3. Criar dentro da pasta lista o arquivo home.html
+4. Escreva dentro do arquivo home.html a seguinte tag:
 ```bash
 <h1> Ola Mundo! </h1>
 ```
 
 ### Passo 02: 
-1 - Voltar no arquivo views.py dentro da pasta lista:
-2 - Alterar a função home para:
+1. Voltar no arquivo views.py dentro da pasta lista:
+2. Alterar a função home para:
 
 ```bash
 def home(request):
