@@ -40,12 +40,6 @@ python -m venv .venv
 
 Caso aconteça um erro ao executar o comando `.venv\Scripts\activate`, você pode habilitar a execução de scripts PowerShell com o comando `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` e tentar novamente.
 
-Para criar e ativar um ambiente virtual Python no Linux ou macOS, execute os seguintes comandos:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
 
 ### Instalar o Django
 
