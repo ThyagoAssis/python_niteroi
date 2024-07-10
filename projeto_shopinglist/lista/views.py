@@ -43,3 +43,9 @@ def mensagem(request):
 
     }
     return render(request, "lista/mensagem.html", alunos)
+
+def testando(resquest):
+    teste = "Banana"
+    frutas = ["Banana", "Maça"]
+
+    return render(resquest, "lista/testando.html", {"teste":teste, "frutas":frutas})

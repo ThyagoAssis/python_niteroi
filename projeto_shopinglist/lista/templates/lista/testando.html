@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if teste == "amora" %}
+        <h2>A palvra é amora</h2>
+    {% else %}
+        <h2>A palvra não é amora</h2>
+    {% endif %}
+
+
+    {%  for fruta in frutas %}
+        <ul>
+            <li>{{fruta}}</li>
+        </ul>
+
+    {% endfor %}
+</body>
+</html>
