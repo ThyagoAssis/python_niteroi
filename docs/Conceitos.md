@@ -195,9 +195,12 @@ def exemplo_view(request):
 
 ### Desafio: 
 
-Você foi selecionado pela empresa XPTO Tecnologias para uma entrevista de emprego. A XPTO trabalha com desenvolvimento de aplicações Web utilizando e, devido a flexibilidade e escalabilidade o Django é o framework pricipal no dia a dia da empresa.
-A sua avaliação de emprego será pautada em desenvovler uma aplicação para um cliente da XPTO do ramo de fotografia e para isso você deverá:
+Você foi selecionado pela empresa XPTO Tecnologias para uma entrevista de emprego. A XPTO trabalha com desenvolvimento de aplicações Web e, devido a flexibilidade e escalabilidade o Django é o framework pricipal no dia a dia da empresa.
+A sua avaliação de emprego será pautada em desenvovler uma aplicação de cadastro de alunos para um cliente da XPTO do ramo escolar. Requisitos da aplicação:
+
 1. Criar um novo projeto em django
-2. Criar um app chamado fotoum 
-3. No template deste app deverá conter titulo chamdo minhas fotos e uma lista com no mínimo 5 fotos
-### OBS: Tanto o título quanto as fotos deverão ser exibidas utilizando o conceito de context do django. ou seja, o titulo e as fotos deverão vir da view para serem exibidas no template
+2. Criar um app chamado cadastro
+3. No template deste app deverá conter uma lista com nome, cursoo, turma e dois botões: um chamado edição e o outro chamado excluir para cada aluno     
+
+
+### OBS: Os dados dos alunos deverão vir de uma lista de dicionário contida na view e deverão ser exibidas no template através do conceito de context do django.

@@ -21,5 +21,5 @@ from lista.views import lista, mensagem
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('lista/', lista),
-    path('mensagem/', mensagem)
+    path('', mensagem)
 ]

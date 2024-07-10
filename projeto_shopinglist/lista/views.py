@@ -16,5 +16,24 @@ def lista(request):
     return render(request, "lista/lista.html", dados)
 
 def mensagem(request):
-    mensagem = "Boa noite"
-    return render(request, "lista/mensagem.html", {"mensagem": mensagem })
+    mensagem = "Lista de alunos"
+    nome_aluno =  [
+        {
+            "id": 1,
+            "nome": "Jose Carlos",
+            "curso":"Python",
+            "turma":2024.3,
+        },
+        {
+            "id": 2,
+            "nome": "Maria Eduarda",
+            "curso": "PHP",
+            "turma": 2024.2,
+        }
+    ]
+    alunos = {
+        "title": mensagem,
+        "alunos":nome_aluno
+
+    }
+    return render(request, "lista/mensagem.html", alunos)
