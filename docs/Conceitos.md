@@ -32,25 +32,120 @@ O contexto é essencial porque ele permite que você passe informações dinâmi
 2. Passando o "context" para o Template: Ao renderizar o template com a função render, você passa o contexto junto com o nome do template.
 3. Acessando o Contexto no Template: Dentro do template, você usa a sintaxe {{ variavel }} para acessar e exibir os valores do contexto.
 
-## Como o Contexto Funciona?
-1. Definindo o Contexto na View: Em sua função de view, você cria um dicionário de contexto com as variáveis e valores que deseja passar para o template.
 
-2. Passando o Contexto para o Template: Ao renderizar o template com a função render, você passa o contexto junto com o nome do template.
-
-3. Acessando o Contexto no Template: Dentro do template, você usa a sintaxe {{ variavel }} para acessar e exibir os valores do contexto.
 
 ## Exemplo Prático
-Arquivo views.py
+
+### Exibindo uma Variável
+Vamos aprender como passar uma variável simples para um template e exibi-la.
+
+
 ```bash
+# views.py
 from django.shortcuts import render
 
-def minha_view(request):
+def saudacao_view(request):
+    mensagem = 'Olá, bem-vindo ao meu site!'
     contexto = {
-        'nome': 'Maria',
-        'idade': 30,
-        'cidade': 'São Paulo'
+        'mensagem': mensagem
     }
-    return render(request, 'meu_template.html', contexto)
+    return render(request, 'saudacao/saudacao.html', contexto)
+```
+### Criando o Template
 
+```bash
+<!-- saudacao.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saudação</title>
+</head>
+<body>
+    <h1>{{ mensagem }}</h1>
+</body>
+</html>
 
 ```
+## Exibindo um Dicionário
+Agora, vamos passar um dicionário para o template e exibir seus conteúdos.
+
+### Definindo a view
+```bash
+
+# views.py
+from django.shortcuts import render
+
+def informacoes_view(request):
+    info_dict = {
+        'site': 'Meu Site',
+        'ano': 2024,
+        'autor': 'Seu Nome'
+    }
+    contexto = {
+        'info': info_dict
+    }
+    return render(request, 'info/informacoes.html', contexto)
+```
+## Criando o template
+
+```bash
+<!-- informacoes.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Informações</title>
+</head>
+<body>
+    <h1>Informações do Site</h1>
+    <p>Site: {{ info.site }}</p>
+    <p>Ano: {{ info.ano }}</p>
+    <p>Autor: {{ info.autor }}</p>
+</body>
+</html>
+```
+
+## Usando um Loop for para Iterar uma Lista
+Agora, vamos passar uma lista para o template e iterar sobre ela usando um loop for.
+
+## Definindo view
+```bash
+# views.py
+from django.shortcuts import render
+
+def lista_nomes_view(request):
+    nomes = ['Maria', 'João', 'Ana', 'Pedro']
+    contexto = {
+        'nomes': nomes
+    }
+    return render(request, 'lista_nomes.html', contexto)
+
+```
+
+## Criando o template
+```bash
+
+<!-- lista_nomes.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Nomes</title>
+</head>
+<body>
+    <h1>Lista de Nomes</h1>
+    <ul>
+        {% for nome in nomes %}
+            <li>{{ nome }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+```
+### Desafio: 
+
+Você foi selecionado pela empresa XPTO Tecnologias para uma entrevista de emprego. A XPTO trabalha com desenvolvimento de aplicações Web utilizando e, devido a flexibilidade e escalabilidade o Django é o framework pricipal no dia a dia da empresa.
+A sua avaliação de emprego será pautada em desenvovler uma aplicação para um cliente da XPTO do ramo de fotografia e para isso você deverá:
+1. Criar um novo projeto em django
+2. Criar um app chamado fotoum 
+3. No template deste app deverá conter titulo chamdo minhas fotos e uma lista com no mínimo 5 fotos
+### OBS: Tanto o título quanto as fotos deverão ser exibidas utilizando o conceito de context do django. ou seja, o titulo e as fotos deverão vir da view para serem exibidas no template
