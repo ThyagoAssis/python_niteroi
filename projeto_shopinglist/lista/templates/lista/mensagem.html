@@ -11,9 +11,9 @@
         <h1>{{title}}</h1>
 
         <table class="table table-striped text-center">
-          <thead thead-dark>
+          <thead class="thead-dark">
             <tr>
-                <th scope="col">id</th>
+                <th scope="col">ID</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Curso</th>
                 <th scope="col">Turma</th>
@@ -24,15 +24,14 @@
 
           {% for aluno in alunos %}
             <tr>
-                <th scope="row">{{aluno.id}}</th>
+                <th>{{aluno.id}}</th>
                 <td>{{aluno.nome}}</td>
                 <td>{{aluno.curso}}</td>
                 <td>{{aluno.turma}}</td>
                 <td>
-                    <button type="button" class="btn btn-primary">Editar</button>
-                    <button type="button" class="btn btn-danger">Excluir</button>
+                    <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                    <button type="button" class="btn btn-danger btn-sm">Excluir</button>
                 </td>
-
             </tr>
           {% endfor %}
 
