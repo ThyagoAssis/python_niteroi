@@ -1,5 +1,5 @@
-### Framework Django
-## O que é um projeto no django?
+## Framework Django
+### O que é um projeto no django?
 
 No Django, um projeto é uma coleção de configurações e aplicativos que formam uma aplicação web completa. Ele fornece a estrutura para a construção de um site ou sistema web, incluindo configurações, URLs, aplicativos, modelos de dados, vistas e templates.
 
@@ -141,6 +141,58 @@ def lista_nomes_view(request):
 </html>
 
 ```
+### Combinando Variável, Dicionário e Loop for
+### Definindo a View
+
+```bash
+
+# views.py
+from django.shortcuts import render
+
+def exemplo_view(request):
+    mensagem = 'Bem-vindo ao meu site!'
+    lista_nomes = ['Maria', 'João', 'Ana', 'Pedro']
+    info_dict = {
+        'site': 'Meu Site',
+        'ano': 2024,
+        'autor': 'Seu Nome'
+    }
+    contexto = {
+        'mensagem': mensagem,
+        'nomes': lista_nomes,
+        'info': info_dict
+    }
+    return render(request, 'exemplo.html', contexto)
+```
+### Criando o Template
+```bash
+
+<!-- exemplo.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo</title>
+</head>
+<body>
+    <h1>{{ mensagem }}</h1>
+    
+    <h2>Lista de Nomes:</h2>
+    <ul>
+        {% for nome in nomes %}
+            <li>{{ nome }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Informações:</h2>
+    <p>Site: {{ info.site }}</p>
+    <p>Ano: {{ info.ano }}</p>
+    <p>Autor: {{ info.autor }}</p>
+</body>
+</html>
+
+
+```
+
 ### Desafio: 
 
 Você foi selecionado pela empresa XPTO Tecnologias para uma entrevista de emprego. A XPTO trabalha com desenvolvimento de aplicações Web utilizando e, devido a flexibilidade e escalabilidade o Django é o framework pricipal no dia a dia da empresa.
