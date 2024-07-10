@@ -14,3 +14,7 @@ def lista(request):
         "fotos": minhas_fotos
     }
     return render(request, "lista/lista.html", dados)
+
+def mensagem(request):
+    mensagem = "Boa noite"
+    return render(request, "lista/mensagem.html", {"mensagem": mensagem })
