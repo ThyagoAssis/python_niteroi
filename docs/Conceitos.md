@@ -198,9 +198,13 @@ def exemplo_view(request):
 Você foi selecionado pela empresa XPTO Tecnologias para uma entrevista de emprego. A XPTO trabalha com desenvolvimento de aplicações Web e, devido a flexibilidade e escalabilidade o Django é o framework pricipal no dia a dia da empresa.
 A sua avaliação de emprego será pautada em desenvovler uma aplicação de cadastro de alunos para um cliente da XPTO do ramo escolar. Requisitos da aplicação:
 
-1. Criar um novo projeto em django
+1. Criar uma nova pasta e chama-la de xpto (area de trabalho)
+2. Abrir esta pasta no pycharm
+3. Cria um novo ambiente virtual
+4. Instalar o django
+5. Criar um novo projeto em django chamado tuxschool
 2. Criar um app chamado cadastro
-3. No template deste app deverá conter uma lista com nome, cursoo, turma e dois botões: um chamado edição e o outro chamado excluir para cada aluno     
+3. No template deste app deverá conter uma lista com nome, curso, turma e dois botões: um chamado edição e o outro chamado excluir para cada aluno     
 
 
 ### OBS: Os dados dos alunos deverão vir de uma lista de dicionário contida na view e deverão ser exibidas no template através do conceito de context do django.
