@@ -29,6 +29,12 @@ def mensagem(request):
             "nome": "Maria Eduarda",
             "curso": "PHP",
             "turma": 2024.2,
+        },
+        {
+            "id": 3,
+            "nome": "Robert Rojas",
+            "curso": "JAVA",
+            "turma": 2024.5,
         }
     ]
     alunos = {
