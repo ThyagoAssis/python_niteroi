@@ -5,7 +5,7 @@ No Django, um projeto é uma coleção de configurações e aplicativos que form
 
 Aqui estão os principais componentes de um projeto Django:
 
-1. ***Configurações  (Settings):*** Contêm todas as configurações do projeto, como configurações de banco de dados, configurações de middleware, locais de templates, entre outras.
+1. ***Configurações  (Settings):*** Contêm todas as configurações do projeto, como configurações de banco de dados,  locais de templates, entre outras.
 
 2. ***URLs:*** Um arquivo principal de roteamento (geralmente urls.py) que mapeia URLs para as vistas correspondentes.
 
