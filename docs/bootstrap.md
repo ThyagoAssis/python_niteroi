@@ -10,17 +10,17 @@ Você deverá instalá-lo em um projeto existente,
 Abra a visualização de comando, navegue até a pasta do ambiente virtual e ative o ambiente virtual.
 Uma vez dentro do ambiente virtual, instale o Bootstrap com este comando:
 
-'''bash
+```bash
 
 pip install django-bootstrap-v5
 
-'''
+```
 
 ## Atualizar configurações
 O próximo passo é incluir o módulo bootstrap na INSTALLED_APPS em settings.py:
 Adicione a opção bootstrap com na fugura abaixo:
 
-'''bash
+```bash
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -31,11 +31,11 @@ INSTALLED_APPS = [
     ***'bootstrap5',***
 ]
 
-'''
+```
 
 ## Adicionar Bootstrap 5 ao modelo
 Para usar o Bootstrap no projeto, comece inserindo algumas linhas de código no seu template html:
-'''bash
+```bash
 
 <!DOCTYPE html>
 <html>
@@ -60,17 +60,17 @@ Para usar o Bootstrap no projeto, comece inserindo algumas linhas de código no 
 </body>
 </html>
 
-'''
+```
 
 Como você pode ver, inserimos estas três linhas na <head> seção:
 
-'''bash
+```bash
 
     {% load bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
 
-'''
+```
 
 1. A primeira linha informa ao Django que ele deve carregar o módulo Bootstrap 5 neste modelo.
 2. A segunda linha insere o <link>elemento com a referência à folha de estilo do bootstrap.
