@@ -56,8 +56,12 @@ Este comando aplica todas as migrations pendentes ao banco de dados.
 ## Exemplo Visual das Migrations
 ### Modelo Definido:
 ![Modelos definido](./imgs/modelo_definido.png)
-2. Arquivo de Migration Gerado:
-3. Tabela no Banco de Dados:
+
+### Arquivo de Migration Gerado:
+![Migration gerado](./imgs/arquivo_migration.png)
+
+### Tabela no Banco de Dados:
+![Tabela](./imgs/tabela_bd.png)
 
 ## Fazendo Alterações nos Modelos
 Se você quiser adicionar um novo campo ao modelo Livro, basta atualizar o arquivo models.py:
