@@ -77,4 +77,4 @@ Como você pode ver, inserimos estas três linhas na <head> seção:
 3. A terceira linha insere o <script>elemento com a referência ao arquivo javascript necessário.
 
 
-## Agora você pode usar as classe do bootstrap em seu projeto
+## Agora você pode usar as classes do bootstrap em seu projeto
