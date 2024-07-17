@@ -55,6 +55,7 @@ Este comando aplica todas as migrations pendentes ao banco de dados.
 
 ## Exemplo Visual das Migrations
 1. Modelo Definido:
+![Modelos definido](./imgs/modelo_definido.png)
 2. Arquivo de Migration Gerado:
 3. Tabela no Banco de Dados:
 
