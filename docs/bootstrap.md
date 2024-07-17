@@ -75,3 +75,6 @@ Como você pode ver, inserimos estas três linhas na <head> seção:
 1. A primeira linha informa ao Django que ele deve carregar o módulo Bootstrap 5 neste modelo.
 2. A segunda linha insere o <link>elemento com a referência à folha de estilo do bootstrap.
 3. A terceira linha insere o <script>elemento com a referência ao arquivo javascript necessário.
+
+
+## Agora você pode usar as classe do bootstrap em seu projeto
