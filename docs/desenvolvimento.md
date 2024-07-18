@@ -1,6 +1,6 @@
 # Passos para desenvolvimento
 
-##Criação do projeto
+## Criação do projeto
 
 Pra instalação do ambiente e criação do projeto e do APP django Acesse: [clique aqui](https://github.com/ThyagoAssis/python2024.3/blob/main/Documentos/ambiente.md)
 
