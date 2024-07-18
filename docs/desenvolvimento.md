@@ -13,3 +13,10 @@ Pra instalação do ambiente e criação do projeto e do APP django Acesse: [cli
 5. Instalação do APP dentro do arquivo settings.py dentro da pasta do projeto Django. Procure a opção INSTALLED_APPS.
 
 Consulte este documento:[clique aqui](https://github.com/ThyagoAssis/python2024.3/blob/main/Documentos/Olamundo.md)
+
+## Instalção e configuração do Bootstrap no projeto
+Podemos utilizar o botstrap para estilizar nosso porjeto, ou seja, podemos deixar nossas páginas mais bonitas. [Clique](https://github.com/ThyagoAssis/python2024.3/blob/main/Documentos/bootstrap.md)
+
+## Migratios.
+As migrations são responsáveis por fazer toda a criação do nosso banco de dados. 
+Deem uma olhada [aqui](https://github.com/ThyagoAssis/python2024.3/blob/main/Documentos/migrations.md)
