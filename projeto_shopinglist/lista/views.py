@@ -1,6 +1,35 @@
 from django.shortcuts import render
+from django.views.generic import ListView, CreateView
+from django.urls import reverse_lazy
+from .models import Alunos
 
 # Create your views here.
+
+class AlunoListViews(ListView):
+    title = "Listagem de Alunos"
+    model = Alunos
+
+class AlunosCreateViews(CreateView):
+    model = Alunos
+
+    #Quais são os campos que o usuario ira preencher
+    fields = ["nome", "curso", "turma"]
+
+    #Redireciona caso aja sucesso
+    #Precisa deficnir o name  na url
+    #fAZEMOS REFERENCIA ATRAVES DONAME
+    success_url = reverse_lazy('aluno_list')
+
+
+
+
+
+
+
+
+
+
+
 def lista(request):
     nome_lista = "Minhas fotos"
     minhas_fotos = [
@@ -14,7 +43,7 @@ def lista(request):
         "fotos": minhas_fotos
     }
     return render(request, "lista/lista.html", dados)
-
+'''
 def mensagem(request):
     mensagem = "Lista de alunos"
     nome_aluno =  [
@@ -43,7 +72,7 @@ def mensagem(request):
 
     }
     return render(request, "lista/mensagem.html", alunos)
-
+'''
 def testando(resquest):
     teste = "Banana"
     frutas = ["Banana", "Maça"]

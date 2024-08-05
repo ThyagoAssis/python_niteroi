@@ -17,6 +17,6 @@ Consulte este documento:[clique aqui](https://github.com/ThyagoAssis/python2024.
 ## Instalção e configuração do Bootstrap no projeto
 Podemos utilizar o botstrap para estilizar nosso porjeto, ou seja, podemos deixar nossas páginas mais bonitas. [Clique](https://github.com/ThyagoAssis/python2024.3/blob/main/Documentos/bootstrap.md)
 
-## Migratios.
+## Migrations.
 As migrations são responsáveis por fazer toda a criação do nosso banco de dados. 
 Deem uma olhada [aqui](https://github.com/ThyagoAssis/python2024.3/blob/main/Documentos/migrations.md)

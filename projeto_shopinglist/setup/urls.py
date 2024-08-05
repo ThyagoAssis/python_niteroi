@@ -16,11 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from lista.views import lista, mensagem, testando
+#from lista.views import lista, mensagem, testando
+from lista.views import AlunoListViews, lista, testando, AlunosCreateViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    #Uso das fuçoes
     path('lista/', lista),
-    path('', mensagem),
-    path('teste/', testando)
+    path('teste/', testando),
+
+
+    #Uso das calsses
+    path('', AlunoListViews.as_view(), name="aluno_list"),
+    path('create', AlunosCreateViews.as_view(), name="aluno_create"),
+
+
+
 ]

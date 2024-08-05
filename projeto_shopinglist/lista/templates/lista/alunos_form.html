@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!---Bootstrap--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>SenacBook</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">TuxSchool</a>
+    </nav>
+
+    <main class="container">
+        <h2>Cdastro Alunos</h2>
+        <form method="post">
+            <!---Inserir para evitar atques de crf--->
+            {% csrf_token %}
+            {{form}}
+            <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+        </form>
+    </main>
+
+</body>
+</html>
