@@ -55,3 +55,5 @@ Desenvolver um projeto web utilizando o framework Django, proporcionando aos alu
 4. Editar e excluir posts.
 5. Comentar em posts.
 6. Buscar por posts.
+
+# Outros exemplos estão no teamns da turma
