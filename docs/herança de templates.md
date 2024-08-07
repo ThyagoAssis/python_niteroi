@@ -1,10 +1,10 @@
-#Tutorial sobre Herança de Template no Django
+# Tutorial sobre Herança de Template no Django
 A herança de templates no Django é uma poderosa ferramenta que permite reutilizar partes do seu código HTML, facilitando a manutenção e a organização do projeto. Vamos entender como isso funciona com um exemplo simples.
 
-##O que é Herança de Template?
+## O que é Herança de Template?
 A herança de template permite criar uma estrutura base para o seu HTML e, em seguida, estender essa estrutura em outros templates. Isso é útil para manter uma aparência consistente em várias páginas do seu site.
 
-##Passo a Passo
+## Passo a Passo
 1. Crie um Template Base
 
 Primeiro, vamos criar um template base que será a estrutura principal para as outras páginas. Crie um arquivo chamado base.html na pasta templates do seu projeto Django.
@@ -76,7 +76,7 @@ Podemos criar outras páginas usando a mesma estrutura. Por exemplo, crie um arq
 {% endblock %}
 
 ```
-##Integrando com o Django
+## Integrando com o Django
 Certifique-se de que suas views estão configuradas para renderizar os templates corretos. Por exemplo, no views.py:
 
 ```bash
@@ -99,7 +99,7 @@ urlpatterns = [
 ]
 
 ```
-##Conclusão
+## Conclusão
 A herança de templates no Django ajuda a manter seu código HTML organizado e fácil de manter. Você cria uma estrutura base e estende essa estrutura em outras páginas, substituindo apenas as partes que precisam ser diferentes. Isso economiza tempo e esforço, especialmente em projetos maiores.
 
 Se você tiver dúvidas ou quiser experimentar mais, sinta-se à vontade para explorar a documentação oficial do Django sobre herança de templates.

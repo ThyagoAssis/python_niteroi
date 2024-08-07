@@ -1,11 +1,11 @@
-#View-Based Functionss (VBF) e View-Based classes (VBC) no Django
+# View-Based Functionss (VBF) e View-Based classes (VBC) no Django
 
 Neste tutorial, vamos aprender sobre dois tipos principais de vistas no Django: View-Based Functionss (VBF) e View-Based classes (VBC). Vamos manter tudo simples e direto ao ponto para facilitar o entendimento.
 
-##View-Based Functionss (VBF)
+## View-Based Functionss (VBF)
 As Funções Baseadas em Views são vistas no Django que utilizam funções do Python para lidar com as requisições HTTP e retornar respostas. Vamos ver um exemplo básico.
 
-##Exemplo de VBF
+## Exemplo de VBF
 ```bash
 # views.py
 from django.http import HttpResponse
@@ -17,7 +17,7 @@ def minha_vista(request):
 
 Aqui, definimos uma função chamada minha_vista que aceita um parâmetro request e retorna uma resposta com o texto "Olá, mundo!".
 
-##Configuração da URL
+## Configuração da URL
 Para que esta vista funcione, precisamos configurá-la em nosso arquivo de URLs.
 
 ```bash
@@ -32,10 +32,10 @@ urlpatterns = [
 Agora, quando acessarmos a URL raiz do nosso site, veremos "Olá, mundo!" como resposta.
 
 
-##View-Based classes (VBC)
+## View-Based classes (VBC)
 As Classes Baseadas em Vistas utilizam classes do Python para lidar com as requisições HTTP. Elas são mais flexíveis e reutilizáveis do que as FBVs, especialmente para vistas complexas.
 
-##Exemplo de VBC
+## Exemplo de VBC
 ```bash
 # views.py
 from django.http import HttpResponse
@@ -47,7 +47,7 @@ class MinhaVista(View):
 ```
 Aqui, criamos uma classe chamada MinhaVista que herda da classe View do Django. Definimos um método get para lidar com requisições HTTP GET.
 
-##Configuração da URL
+## Configuração da URL
 Precisamos configurar esta vista no nosso arquivo de URLs.
 ```bash
 # urls.py
@@ -60,7 +60,7 @@ urlpatterns = [
 ```
 Note que utilizamos MinhaVista.as_view() para converter nossa classe em uma vista que o Django pode usar.
 
-##Quando Usar VBF e VBV?
+## Quando Usar VBF e VBV?
 1. VBF: São simples e diretas, ideais para vistas simples ou para iniciantes.
 2. VBC: São mais poderosas e flexíveis, recomendadas para vistas mais complexas ou quando precisamos reutilizar código.
 
