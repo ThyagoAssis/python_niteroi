@@ -37,8 +37,7 @@ Desenvolver um projeto web utilizando o framework Django, proporcionando aos alu
 8. Criação das views:
 8. Implementação das views para as operações CRUD.
 10. Utilização de CBVs para simplificar o código.
-11. Criação dos templates:
- - Criação dos templates utilizando HTML e CSS.
+11. Criação dos templates: Criação dos templates utilizando HTML e CSS.
 12. Utilização de Bootstrap para estilização.
 13. Utilização de herança de templates para organizar a estrutura dos templates.
 14. Configuração das URLs:
